@@ -30,7 +30,7 @@ npm run dev
 
 ## Screenshots
 
-![App Screenshot](./assets/screenshot.png)
+![App Screenshot](./src/assets/screenshot.png)
 
 ## Author
 
