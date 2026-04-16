@@ -30,7 +30,7 @@ npm run dev
 
 ## Screenshots
 
-> Add your screenshots here
+![App Screenshot](./assets/screenshot.png)
 
 ## Author
 
