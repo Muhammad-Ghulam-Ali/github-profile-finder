@@ -65,16 +65,16 @@ function App() {
 
         {/* LOADING */}
         <div className="flex items-center justify-center">
-          <div className={`flex items-center justify-center mt-[10%] w-[70%] py-6 rounded-2xl border border-[#68685a] bg-[#3A3930] ${loader ? "block" : "hidden"}`}>
-            <h1 className={`text-white`}><span className='inline-block w-3 h-3 rounded-full bg-green-600 mr-1 blink'></span> Fetching profile for <span className='font-bold'>{userName}...</span></h1>
+          <div className={`flex items-center justify-center mt-[10%] w-full md:w-[70%] py-6 rounded-2xl border border-[#68685a] bg-[#3A3930] ${loader ? "block" : "hidden"}`}>
+            <h1 className={`text-white text-center`}><span className='inline-block w-3 h-3 rounded-full bg-green-600 mr-1 blink'></span> Fetching profile for <span className='font-bold'>{userName}...</span></h1>
           </div>
         </div>
 
         {/* NO USER */}
         <div className="flex items-center justify-center">
-          <div className={`flex flex-col items-center justify-start mt-[10%] w-[70%] py-6 rounded-2xl border border-red-400 bg-[#3A3930] ${error ? "block" : "hidden"}`}>
+          <div className={`flex flex-col items-center justify-start mt-[10%] w-full md:w-[70%] py-6 rounded-2xl border border-red-400 bg-[#3A3930] ${error ? "block" : "hidden"}`}>
             <h1 className={`text-red-300`}><span className='inline-block w-3 h-3 rounded-full bg-red-600 mr-2'></span>{error}</h1>
-            <small className='text-[#E8E4D9]'>No GitHub account matches <span className='font-bold'>"{userName}"</span>. Check the spelling and try again.</small>
+            <small className='text-[#E8E4D9] text-center'>No GitHub account matches <span className='font-bold'>"{userName}"</span>. Check the spelling and try again.</small>
           </div>
         </div>
 
@@ -133,8 +133,8 @@ function App() {
                   return (
                     <div
                       key={elem.id}
-                      className="repoCard w-[100%] md:w-[80%] flex flex-col gap-3 px-7 py-6 rounded-2xl bg-[#3A3930]">
-                      <div className="repoTitle flex items-center justify-between">
+                      className="repoCard w-full lg:w-[80%] flex flex-col gap-3 px-7 py-6 rounded-2xl bg-[#3A3930]">
+                      <div className="repoTitle flex flex-col md:flex-row items-center justify-between">
                       <h1 className='font-bold text-2xl text-[#BA7517]'>{elem?.name}</h1>
                       <a className='text-[#BA7517]' href={`${elem?.html_url}`} target='_blank'>View <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                       </div>
@@ -146,6 +146,7 @@ function App() {
               </div>
             </div>
           </div>
+          
 
         </div>
 
