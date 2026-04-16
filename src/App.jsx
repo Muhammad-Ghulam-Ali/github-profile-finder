@@ -86,7 +86,7 @@ function App() {
             <div className="card flex flex-col gap-4 w-full max-w-[700px] bg-[#3A3930] mt-6 rounded-2xl">
               <div className="info flex flex-col md:flex-row items-center gap-8 w-full bg-[#F5EDD8] py-8 px-6 rounded-t-2xl">
                 <div className="logo">
-                  <h1 className='py-6 px-6.5 rounded-[50%] font-bold text-[#E8E4D9] text-xl bg-[#BA7517]'>
+                  <h1 className='h-20 w-20 rounded-full font-bold text-[#E8E4D9] text-xl bg-[#BA7517] flex items-center justify-center'>
                     {(userData?.name || userData?.login)
                       ?.trim()
                       .split(/\s+/)
